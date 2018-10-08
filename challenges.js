@@ -148,6 +148,6 @@ function createBank(password, startingBalance) {
 }
 
 // const sofiaBank = createBank("Cod3ly!", 100);
-// sofiaBank("Cod3ly!", 150, "add");
-// sofiaBank("Codely123", 150, "add");
-// sofiaBank("Cod3ly!", 50, "subtract");
+// console.log(sofiaBank("Cod3ly!", 150, "add"));
+// console.log(sofiaBank("Codely123", 150, "add"));
+// console.log(sofiaBank("Cod3ly!", 50, "subtract"));
