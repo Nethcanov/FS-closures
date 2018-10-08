@@ -20,6 +20,7 @@ console.log(counterTwo()); // 2
 
 
 
+
 /*------------------
 2)
 Create a function named "startingCounter". It takes
@@ -99,11 +100,11 @@ console.log(password("123pass")); // Password incorrect.
 
 /*------------------
 6)
-Create a function named "bankAccount"
+Create a function named "createBankAccount"
 that takes in a number (x). That number x
 should be stored in a variable called "balance".
 
-The bankAccount function should return a
+The createBankAccount function should return a
 closure with two parameters– a number (y) and 
 a string (name it "action").
 
@@ -114,7 +115,7 @@ be subtracted from x.
 The closure should return x. 
 
 Test cases:
-const marcoAccount = bankAccount(100);
+const marcoAccount = createBankAccount(100);
 console.log(marcoAccount(50, "add")); // 150
 console.log(marcoAccount(10, "add")); // 160
 console.log(marcoAccount(70, "subtract")); // 90
@@ -140,7 +141,7 @@ function createBank(password, startingBalance) {
     let access = checkPassword(password);
 
     if (access === "CHANGE THIS TEXT") {
-      // add or subtract from the bank account 
+      // add or subtract from bankAccount
     } else {
       return access;
     }
