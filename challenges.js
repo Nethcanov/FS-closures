@@ -3,9 +3,9 @@
 Create a function named "counter". It does
 not have any parameters.
 
-This function should store a private variable (x).
-It should return a closure that increases x by 1
-before returning x.
+Create a variable named y, and create a
+closure that increases y by 1 before 
+returning y.
 
 Test cases:
 const counterOne = counter();
@@ -23,12 +23,12 @@ console.log(counterTwo()); // 2
 
 /*------------------
 2)
-Create a function named "startingCounter". It takes
-in one parameter, a number (x);
+Create a function named "startingCounter".
+It takes in one parameter, a number (x).
 
-The function should store x as a private variable.
-It should also return a closure that increases x by 1
-before returning x.
+Store x in a variable named count, and return
+a closure that increases count by 1 before
+returning count.
 
 Test cases:
 const counterThree = startingCounter(10);
@@ -44,14 +44,14 @@ console.log(counterFour()); // 5
 /*------------------
 3)
 Create a function named "countdown". It takes
-in one parameter, a number (x);
+in one parameter, a number (x). Store x
+in a variable called count.
 
-The function should store x as a private variable.
-It should also return a closure. This closure should
-decrease x by 1, and then return x (if x is greater than
-one) or return "Time's Up!" if x is zero or less.
+Return a closure that decreases count by 1,
+and then returns either the count (if
+the count is greater than or equal to one)
+or "Time's Up!" (if the count is zero or less).
 
-Test cases:
 const counterFive = countdown(3);
 console.log(counterFive()); // 2
 console.log(counterFive()); // 1
@@ -109,10 +109,10 @@ closure with two parameters– a number (y) and
 a string (name it "action").
 
 If the action is equal to "add", y should be added
-to x. If the action is equal to "subtract", y should
-be subtracted from x.
+to balance. If the action is equal to "subtract", y should
+be subtracted from balance.
 
-The closure should return x. 
+The closure should return balance. 
 
 Test cases:
 const marcoAccount = createBankAccount(100);
@@ -123,6 +123,7 @@ console.log(marcoAccount(70, "subtract")); // 90
 
 
 
+
 /*------------------
 7)
 The function below uses the other functions you
@@ -130,6 +131,9 @@ created to make a secure account. Modify the conditional
 in the if statement so that it evaluates to true. Then, 
 use the bank account function so that money is added
 or subtracted from the account.
+
+Look back at the other functions you created to make sure
+you understand how they work!
 ------------------*/
 
 
@@ -141,7 +145,8 @@ function createBank(password, startingBalance) {
     let access = checkPassword(password);
 
     if (access === "CHANGE THIS TEXT") {
-      // add or subtract from bankAccount
+      // use your bankAccount function
+      // to add or subtract money here
     } else {
       return access;
     }
