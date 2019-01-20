@@ -132,6 +132,8 @@ in the if statement so that it evaluates to true. Then,
 use the bank account function so that money is added
 or subtracted from the account.
 
+This closure should return the bank account balance.
+
 Look back at the other functions you created to make sure
 you understand how they work!
 ------------------*/
@@ -154,6 +156,7 @@ function createBank(password, startingBalance) {
 }
 
 // const sofiaBank = createBank("Cod3ly!", 100);
-// console.log(sofiaBank("Cod3ly!", 150, "add"));
-// console.log(sofiaBank("Codely123", 150, "add"));
-// console.log(sofiaBank("Cod3ly!", 50, "subtract"));
+// console.log(sofiaBank("Cod3ly!", 150, "add")); //250
+// console.log(sofiaBank("Codely123", 150, "add")); //Password incorrect
+// console.log(sofiaBank("Cod3ly!", 50, "subtract")); //200
+
